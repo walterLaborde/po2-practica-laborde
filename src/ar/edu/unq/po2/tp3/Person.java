@@ -28,7 +28,7 @@ public class Person {
 	
 	public long age() {
 		LocalDate curDate = LocalDate.now();
-		return ChronoUnit.YEARS.between(curDate, this.getFechaNac());
+		return ChronoUnit.YEARS.between(this.getFechaNac(),curDate);
 	}
 	
 	// El receptor es menor en edad que el parametro

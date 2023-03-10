@@ -29,9 +29,9 @@ class PersonTestCase {
 		assertTrue(p.youngerThan(p1));
 	}
 	
-	//@Test
+	@Test
 	void pYoungerThanP2Test() {
-		assertTrue(p.youngerThan(p2));
+		assertFalse(p.youngerThan(p2));
 	}
 
 }
